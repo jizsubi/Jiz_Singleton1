@@ -6,18 +6,12 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            /*
-             * Assuming Singleton is created from employee class
-             * we refer to the GetInstance property from the Singleton class
-             */
-            Singleton fromEmployee = Singleton.GetInstance;
-            fromEmployee.PrintDetails("From Employee");
-            /*
-             * Assuming Singleton is created from student class
-             * we refer to the GetInstance property from the Singleton class
-             */
-            Singleton fromStudent = Singleton.GetInstance;
-            fromStudent.PrintDetails("From Student");
+           
+            Singleton person1 = Singleton.GetInstance;
+            fromEmployee.PrintDetails("From person1");
+        
+            Singleton person2 = Singleton.GetInstance;
+            fromStudent.PrintDetails("From person2");
 
             Console.ReadLine();
         }
